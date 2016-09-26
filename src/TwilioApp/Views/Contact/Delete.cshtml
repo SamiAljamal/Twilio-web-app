@@ -3,3 +3,10 @@
 *@
 @{
 }
+@model TwilioApp.Models.Contact
+
+<h2>Delete this person?</h2>
+<form method="post">
+    <input type="hidden" asp-for="ContactId" />
+    <button type="submit">Delete</button>
+</form>

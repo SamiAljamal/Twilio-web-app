@@ -3,3 +3,14 @@
 *@
 @{
 }
+@model TwilioApp.Models.Contact
+
+<h2>Edit Contact</h2>
+<form method="post">
+    <label asp-for="ContactName">Name</label>
+    <input type="text" asp-for="ContactName" />
+    <label asp-for="ContactNumber">Number</label>
+    <input type="text" asp-for="ContactNumber" />
+    <input type="hidden"asp-for="ContactId"/>
+    <button type="submit">Submit</button>
+</form>
