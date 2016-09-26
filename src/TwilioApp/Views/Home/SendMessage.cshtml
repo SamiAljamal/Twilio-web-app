@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model TwilioApp.Models.Message
+
+<h2>Send a new message</h2>
+<hr />
+<form method="post">
+    <label asp-for="To"></label>
+    <select asp-for="To">
+        @foreach (var contact in ViewBag.Contacts)
+        {
+            <option value="@contact.ContactNumber">@contact.ContactName</option>
+
+        }
+    </select>
+    <label asp-for="From"></label>
+    <input type="text" asp-for="From" />
+    <label asp-for="Body"></label>
+    <input type="text" asp-for="Body" />
+    <input type="submit" value="Send!" />
+</form>
+@Html.ActionLink("Back home", "Index")

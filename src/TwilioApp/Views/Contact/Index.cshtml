@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Contacts</h2>
+<ul>
+    @foreach(var contact in Model)
+    {
+        <li>Name: @contact.ContactName Number: @contact.ContactNumber <a asp-controller="Contact" asp-action="Edit" asp-route-id ="@contact.ContactId">Edit </a><a asp-controller="Contact" asp-action="Delete" asp-route-id ="@contact.ContactId">Delete</a></li>
+
+    }
+</ul>
+<a asp-controller="Contact" asp-action="Create">Add a new Contact</a>

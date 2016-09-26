@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{36D5D18F-A23E-4220-8DF8-E3CFB1F3AC19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A3A18D0-C026-4FD5-9A0B-9CFC2AED57B2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TwilioApp", "src\TwilioApp\TwilioApp.xproj", "{086085D8-4CCF-46D1-89FE-42295EF3C49F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{086085D8-4CCF-46D1-89FE-42295EF3C49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086085D8-4CCF-46D1-89FE-42295EF3C49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086085D8-4CCF-46D1-89FE-42295EF3C49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086085D8-4CCF-46D1-89FE-42295EF3C49F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{086085D8-4CCF-46D1-89FE-42295EF3C49F} = {36D5D18F-A23E-4220-8DF8-E3CFB1F3AC19}
+	EndGlobalSection
+EndGlobal
